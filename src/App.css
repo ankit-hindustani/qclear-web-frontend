@@ -1,0 +1,90 @@
+body{
+  background-color: #ffffff;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 1rem 3rem;
+  min-height: 90vh;
+}
+
+.App-header {
+  background-color: #ffffff;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.App-logo{
+  height: 3rem;
+  margin: 0 1rem;
+}
+.main-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+.main-section div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading{
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 1rem 1rem;
+  color: #212427;
+  align-self: flex-start;
+  line-height: 130%;
+}
+.heading-2{
+  color: #2D94F3;
+}
+.sub-heading{
+  font-size: 1rem;
+  color: #212427;
+  margin: auto 1rem;
+  align-self:flex-start ;
+}
+.mobile-dashboard-img{
+  max-height: 80vh;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media screen and (max-width:812px) {
+  .App {
+  padding: 1rem 1rem;
+  min-height: 90vh;
+}
+  .main-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0rem;
+  width: 100%;
+}
+.main-section div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading{
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 3rem 0rem;
+  color: #212427;
+  /* align-self: flex-start; */
+  text-align: center;
+  line-height: 130%;
+}
+}
