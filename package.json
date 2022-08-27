@@ -1,6 +1,6 @@
 {
   "name": "qclear-web-frontend",
-  "homepage": "https://qclear.in/",
+  "homepage": "https://qclear.in",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
