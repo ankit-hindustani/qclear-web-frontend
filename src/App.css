@@ -1,18 +1,18 @@
 body{
-  background-color: #ffffff;
+  background-color: #F0F4FF;
 }
 .App {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding: 1rem 3rem;
   min-height: 90vh;
   position: relative;
 }
 
 .App-header {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   height: 3.5rem;
   display: flex;
   flex-direction: row;
@@ -26,7 +26,7 @@ body{
     opacity: 0.5;
     position: absolute;
     z-index: 0;
-    animation: float_1 60s ease infinite;
+    animation: float_1 40s ease infinite;
     animation-fill-mode: both;
     background: radial-gradient( 71.5% 71.5% at 100% -6.56%, #d6f8b4 0%, #e9fffc 28.1%, #2D94F3 99.99%, #2D94F3 100% );
     border-radius: 100%;
