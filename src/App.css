@@ -8,6 +8,7 @@ body{
   background-color: #ffffff;
   padding: 1rem 3rem;
   min-height: 90vh;
+  position: relative;
 }
 
 .App-header {
@@ -16,6 +17,20 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  z-index: 1;
+}
+.App-header::after {
+     content: "";
+    width: 8vw;
+    height: 8vw;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 0;
+    animation: float_1 60s ease infinite;
+    animation-fill-mode: both;
+    background: radial-gradient( 71.5% 71.5% at 100% -6.56%, #d6f8b4 0%, #e9fffc 28.1%, #2D94F3 99.99%, #2D94F3 100% );
+    border-radius: 100%;
+    /* filter: blur(40px); */
 }
 .App-logo{
   height: 3rem;
@@ -27,6 +42,7 @@ body{
   align-items: center;
   margin: 0 auto;
   width: 100%;
+  z-index: 1;
 }
 .main-section div{
   width: 50%;
@@ -59,6 +75,7 @@ body{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+
 @media screen and (max-width:812px) {
   .App {
   padding: 1rem 1rem;
@@ -87,4 +104,30 @@ body{
   text-align: center;
   line-height: 130%;
 }
+}
+
+
+
+/* animation */
+@keyframes float_1 {
+  0% {
+    left: 0%;
+    top: 0%;
+  }
+  25% {
+    left: 0%;
+    top: 50%;
+  }
+  50% {
+  top: 50%;
+  left: 50%;
+  }
+  75% {
+    left: 80%;
+    top: 0%;
+  }
+  100% {
+    left: 0;
+    top:0%;
+  }
 }

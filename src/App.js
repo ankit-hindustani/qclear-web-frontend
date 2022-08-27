@@ -3,6 +3,16 @@ import mobileDashboard from './dashboard.png';
 import './App.css';
 
 function App() {
+  var i = 0;
+  var txt = "Lorem ipsum dummy text blabla.";
+  var speed = 50;
+    setInterval(function(){
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+      }
+    }, speed);
+    
   return (
     <div className="App">
       <header className="App-header">
